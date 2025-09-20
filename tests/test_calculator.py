@@ -31,3 +31,7 @@ def test_divide_basic():
 def test_divide_raises_on_zero():
     with pytest.raises(ZeroDivisionError):
         divide(1, 0)
+
+def test_add_negative_numbers():
+    assert add(-3, -7) == -10
+
